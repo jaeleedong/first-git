@@ -1,31 +1,19 @@
-class Main {
-    static boolean isNumber(String str) {
-        boolean result = false;
-        try {
-            for (int i = 0; i < str.length(); i++) {
-                if ((str.charAt(i) - 48 >= 0) && (str.charAt(i) - 48 <= 9)) {
-                    result = true;
-                } else {
-                    result = false;
-                    break;
-                }
-            }
-            return result == true ? true : false;
-        } catch (Exception e) {
-            return false;
-        }
+import java.util.Arrays;
+
+//TIP 코드를 <b>실행</b>하려면 <shortcut actionId="Run"/>을(를) 누르거나
+// 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
+public class Main {
+    public static void main(String[] args) {
+    int[] a = new int[45];
+
+    for(int i =0; i < a.length; i++){
+        a[i]= i +1;
     }
-        public static void main (String[]args){
-            String str = "123";
-            System.out.println(str + "  는 숫자입니까? " + isNumber(str));
-            str = "12o34";
-            System.out.println(str + "  는 숫자입니까? " + isNumber(str));
-            str = null;
-            System.out.println(str + "  는 숫자입니까? " + isNumber(str));
-            str = " ";
-            System.out.println(str + "  는 숫자입니까? " + isNumber(str));
-            MyTv2 t = new MyTv2();
-            t.setChannel(10);
-            System.out.println("CH:"+t.getChannel());
-        }
+
+    for(int i =0; i <6; i++){
+
     }
+
+        System.out.println(Arrays.toString(a));
+    }
+}
