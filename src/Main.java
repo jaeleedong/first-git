@@ -24,5 +24,8 @@ class Main {
             System.out.println(str + "  는 숫자입니까? " + isNumber(str));
             str = " ";
             System.out.println(str + "  는 숫자입니까? " + isNumber(str));
+            MyTv2 t = new MyTv2();
+            t.setChannel(10);
+            System.out.println("CH:"+t.getChannel());
         }
     }
