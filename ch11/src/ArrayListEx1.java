@@ -22,11 +22,12 @@ class ArrayListEx1 {
 
         list2.add("B");
         list2.add("C");
-        list2.add("A");
+        list2.add(3,"A");
         print(list1, list2);
 
         list2.set(3, "AA");
         print(list1, list2);
+
 
         System.out.println("list1.retainAll(list2):"+list1.retainAll(list2));
         print(list1, list2);
@@ -35,8 +36,18 @@ class ArrayListEx1 {
             if(list1.contains(list2.get(i))) {
                 list2.remove(i);
             }
+
         }
+        list1.add(0,"1");
+        System.out.println("list1.indexOf(1) = " + list1.indexOf(1));
+        System.out.println("list1.indexOf(1) = " + list1.indexOf("1"));
+
+//        list1.remove(1);
+//        list1.remove(new String("1"));
+        list1.remove(new Integer(1));
         print (list1, list2);
+
+
     }
     static void print (ArrayList list1, ArrayList list2) {
         System.out.println("list1 = " + list1);
