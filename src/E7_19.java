@@ -6,10 +6,10 @@ class Exercise7_19 {
         b.buy(new Tv());
         b.buy(new Computer());
         b.buy(new Tv());
-//        b.buy(new Audio());
-//        b.buy(new Computer());
-//        b.buy(new Computer());
-//        b.buy(new Computer());
+        b.buy(new Audio());
+        b.buy(new Computer());
+        b.buy(new Computer());
+        b.buy(new Computer());
         b.summary();
     }
 }
@@ -61,10 +61,6 @@ class Buyer {
         System.out.println(Arrays.toString(cart));
         System.out.println("sum = " + sum);
         System.out.println("남음 " + money);
-
-        
-        
-        
     } // summary()
 }
 class Product {
