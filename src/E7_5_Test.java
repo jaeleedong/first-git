@@ -24,4 +24,4 @@ class Point2 extends Point1 {
         this.z = z;
     }
 }
-// Child() -> Child(int x) -> Parent() -> Parent(int x) -> Object()
+// Point2() -> Point2(int x) -> Point1() -> Point1(int x) -> Object()

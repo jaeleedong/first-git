@@ -12,7 +12,6 @@ class Exercise11_2 {
         list.add(7);
         HashSet set = new HashSet(list);
         TreeSet tset = new TreeSet(set);
-
         Stack stack = new Stack();
         stack.addAll(tset);
         while(!stack.empty())
